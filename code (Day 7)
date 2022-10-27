@@ -1,0 +1,29 @@
+# ACC45DAYSOFCODE
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	while(T--){
+	    int N; 
+        cin>>N;
+        int idx_1,idx_n;
+        for(int i=0;i<N;i++){
+            int swapping;
+            cin>>swapping;
+            if(swapping==1)
+                idx_1=i;
+            else if(swapping==N)
+                idx_n=i;
+        }
+
+        if(idx_1<idx_n)
+            cout<<idx_1+N-1-idx_n<<endl;
+        else
+            cout<<idx_1+N-idx_n-2<<endl;
+
+	}
+	return 0;
+}
