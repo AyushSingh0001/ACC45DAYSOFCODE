@@ -1,0 +1,29 @@
+# ACC45DAYSOFCODE
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	int t;
+	cin >> t;
+	while (t--)
+	{
+		int n;
+		cin >> n;
+		string str;
+		cin >> str;
+		//calculate grps
+		int grp = 0;
+		char curr = '*';
+		for ( char ch : str) {
+			if (curr == '*')
+				curr = ch, grp++;
+			else if (curr != ch)
+				curr = ch, grp++;
+		}
+
+		cout << grp << "\n";
+	}
+
+	return 0;
+}
