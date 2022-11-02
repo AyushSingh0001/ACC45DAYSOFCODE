@@ -1,0 +1,67 @@
+# ACC45DAYSOFCODE
+#include <iostream>
+
+using namespace std;
+
+
+
+int main() {
+
+	// your code goes here
+
+	int t ; cin >> t;
+
+	while(t--){
+
+	    int n ;
+
+	    cin >> n ;
+
+	    int a[n] ;
+
+	    for(int i=0 ; i<n ; i++){
+
+	        cin >> a[i];
+
+	        a[i] = abs(a[i]) ;
+
+	    }
+
+	    long long ans = n , count=1 ;
+
+	    int i=0 ;
+
+	    while(i<n-1){
+
+	        count=1 ;
+
+	        while(i+1<n && a[i+1]<=a[i]){
+
+	            count++ ;
+
+	            i++ ;
+
+	        }
+
+	        
+
+	        while(i+1<n && a[i+1]>=a[i]){
+
+	            count++ ;
+
+	            i++ ;
+
+	        }
+
+	        ans = ans + count*(count+1)/2 -count;
+
+	    }
+
+	    cout << ans << "\n"; 
+
+	}
+
+	return 0;
+
+}
+
