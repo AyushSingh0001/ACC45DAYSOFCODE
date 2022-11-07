@@ -1,0 +1,28 @@
+# ACC45DAYSOFCODE
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin >> t;
+    for(int i=0;i<t;i++){
+	    string S, T;
+	    cin >> S >> T;
+	    string M[6];
+	    for(int i=0; i<(S.length()); i++){
+            if(S[i]==T[i]){
+                M[i]="G";
+            }
+            else{
+                M[i]="B";
+            }
+            cout << M[i];
+	    }
+	    cout << endl;
+	}
+	
+	
+	
+	return 0;
+}
