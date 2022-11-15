@@ -1,0 +1,27 @@
+# ACC45DAYSOFCODE
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,x;
+	cin>>t;
+	while(t--){
+	    cin>>x;
+	    int i=0;
+	    while(x>=10){
+	        x=x-10;
+	        i++;
+	    }
+	    while(x==5){
+	        x=x-5;
+	        i++;
+	    }
+	    if(x==0){
+	        cout<<i<<endl;
+	    }
+	    else
+	    cout<<"-1"<<endl;
+	}
+	return 0;
+}
