@@ -1,0 +1,21 @@
+# ACC45DAYSOFCODE
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    float a,b,x,y;
+	    cin>>a>>b>>x>>y;
+	    float k=a/b;
+	    float p=x/y;
+	    if(k<p)
+	    cout<<"Bob"<<endl;
+	    else if(p<k)
+	    cout<<"Alice"<<endl;
+	    else
+	    cout<<"Equal"<<endl;
+	}
+	return 0;
+}
